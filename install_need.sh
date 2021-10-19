@@ -22,3 +22,7 @@ pacman -S \
 	kmymoney \
 	python-pip \
 	sudo
+
+### Arrancamos el entorno gráfico
+systemctl enable lightdm
+systemctl start lightdm
