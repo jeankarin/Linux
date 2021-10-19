@@ -4,4 +4,13 @@
 pacman -S \
     minikube \
 	conntrack-tools \
-	kubectl
+	kubectl \
+	docker
+
+### Habilitamos docker
+systemctl enable docker
+systemctl start docker
+
+### Arrancamos minikube con docker
+sudo minikube --driver=none
+sudo minikube status
