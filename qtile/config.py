@@ -137,11 +137,11 @@ screens = [
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.CheckUpdates(
-                    custom_command="checkupdates",
+                    custom_command="checkupdates;pacman -Syyu",
                     update_interval=1800,
                     display_format="Actualizaciones: {updates}",
                     padding=10,
-                    execute="sudo alacritty -e pacman -Syyu",
+                    execute="alacritty -e pacman -Syyu",
                 ),
                 widget.Chord(
                     chords_colors={
@@ -204,7 +204,7 @@ wmname = "LG3D"
 
 autostart = [
         "setxkbmap es",
-        "feh --bg-fill /home/jahorrillo/download/669970.jpg",
+        "feh --bg-fill /root/images/669970.jpg",
         "nm-applet &",
 ]
 
