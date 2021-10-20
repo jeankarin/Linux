@@ -12,5 +12,5 @@ systemctl enable docker
 systemctl start docker
 
 ### Arrancamos minikube con docker
-sudo minikube --driver=none
+sudo minikube start --driver=none
 sudo minikube status
