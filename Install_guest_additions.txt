@@ -1,0 +1,12 @@
+1.Install packages for building Guest Additions
+pacman -S --noconfirm linux-headers base-devel
+
+2.Mount Guest Additions CD Image
+Insertamos la imagen ISO en Device  Insert Guest Additions CD image.
+Montamos el CD
+mount -t iso9660 /dev/sr0 /mnt
+
+3.Install Guest Additions
+cd /mnt
+./VBoxLinuxAdditions.run
+reboot
