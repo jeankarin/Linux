@@ -21,7 +21,9 @@ pacman -S \
 	libdbi-drivers \
 	kmymoney \
 	python-pip \
-	sudo
+	sudo \
+	linux-headers \
+	base-devel
 
 ### Arrancamos el entorno gráfico
 systemctl enable lightdm
