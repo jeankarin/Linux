@@ -5,7 +5,8 @@ pacman -S \
     minikube \
 	conntrack-tools \
 	kubectl \
-	docker
+	docker \
+	--noconfirm
 
 ### Habilitamos docker
 systemctl enable docker
