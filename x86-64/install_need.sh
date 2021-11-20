@@ -23,7 +23,8 @@ pacman -S \
 	python-pip \
 	sudo \
 	linux-headers \
-	base-devel
+	base-devel \
+	--noconfirm
 
 ### Arrancamos el entorno gráfico
 systemctl enable lightdm
