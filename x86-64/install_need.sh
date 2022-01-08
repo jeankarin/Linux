@@ -24,6 +24,7 @@ pacman -S \
 	sudo \
 	linux-headers \
 	base-devel \
+	i3lock \
 	--noconfirm
 
 ### Arrancamos el entorno gráfico
