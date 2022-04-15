@@ -28,6 +28,7 @@ pacman -S \
 	linux-headers \
 	base-devel \
 	i3lock \
+	gedit \
 	--noconfirm
 
 ### Arrancamos el entorno gráfico
