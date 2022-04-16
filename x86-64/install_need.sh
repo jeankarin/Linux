@@ -29,6 +29,7 @@ pacman -S \
 	base-devel \
 	i3lock \
 	gedit \
+	bash-completion \
 	--noconfirm
 
 ### Arrancamos el entorno gráfico
