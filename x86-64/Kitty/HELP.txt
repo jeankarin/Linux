@@ -1,1 +1,2 @@
 La configuración de kitty está en ~/.config/kitty/kitty.conf
+
