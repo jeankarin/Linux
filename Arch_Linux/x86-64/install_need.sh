@@ -12,7 +12,6 @@ pacman -S \
 	networkmanager \
 	network-manager-applet \
 	xorg \
-	#alacritty \
 	kitty \
 	feh \
 	dmenu \
@@ -35,3 +34,6 @@ pacman -S \
 ### Arrancamos el entorno gráfico
 systemctl enable lightdm
 systemctl start lightdm
+
+### Paquetes que ya no usamos
+#alacritty
