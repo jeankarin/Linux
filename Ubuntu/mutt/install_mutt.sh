@@ -12,7 +12,7 @@ if [ $# -eq 0 ]; then
     exit 1
 else
     # Comprobamos si existe el usuario en /etc/passwd
-    USER=`cat /etc/passwd | cut -d":" -f 1 | grep $1`
+    USER=`cat /etc/passwd | cut -d":" -f 1 | grep -w $1`
     if [[ $1 == ${USER} ]];then
         #Instalamos mutt
         sudo apt install mutt -y
