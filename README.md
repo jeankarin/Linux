@@ -1,1 +1,1 @@
-# arch_linux
+# Carpeta de configuración de Linux.
