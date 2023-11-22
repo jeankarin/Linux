@@ -29,6 +29,7 @@ pacman -S \
 	i3lock \
 	gedit \
 	bash-completion \
+	rofi \
 	--noconfirm
 
 ### Arrancamos el entorno gráfico
