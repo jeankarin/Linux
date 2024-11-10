@@ -16,7 +16,7 @@ else
     USER=`cat /etc/passwd | cut -d":" -f 1 | grep $1`
     if [[ $1 == ${USER} ]]; then
 		# Instalamos paquetes necesarios
-		apt install software-properties-common apt-transport-https ca-certificates curl gnupg lsb-release
+		apt install software-properties-common apt-transport-https ca-certificates curl gnupg lsb-release -y
 
 		# Añadimos clave gpg del repositorio
 		curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
@@ -28,12 +28,12 @@ else
 		apt update
 
 		# Instalamos docker y docker-compose
-		apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+		apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 
 		# Añadimos el usurio al grupo de Docker
 		usermod -aG docker $1
 	else
         # Informamos que no hemos encontrado ningún usuario en /etc/passwd
         echo "Usuario no encontrado"
-    fi
+	fi
 fi
