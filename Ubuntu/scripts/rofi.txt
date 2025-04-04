@@ -1,0 +1,7 @@
+rofi -show <mode>
+
+mode:
+windows --> escoger aplicaciones ya abiertas
+drun --> menú de aplicaciones instaladas
+run --> ejecutar comandos del sistema
+ssh --> te conectas por ssh, te carga el fichero config de la carpeta .ssh
