@@ -1,0 +1,19 @@
+# fastfetch
+Muestra toda la información de tu pc
+pacman -Syyu fastfetch
+
+# Actualizar sistema operativo
+pacman -Syu
+
+# instalar
+pacman -S <nombre_paquete>
+
+# paquetería AUR
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# Discos
+sudo pacman -S ntfs-3g exfat-utils nfs-utils cifs-utils
+
+
