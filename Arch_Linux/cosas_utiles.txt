@@ -13,7 +13,11 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+# Comandos yay (AUR):
+yay -Ss nombre_del_paquete --> busca el paquete
+yay -S nombre_del_paquete --> instala el paquete
+yay -Syu --> actualiza todos los paquetes
+yay -Syu yay --> actualiza yay
+
 # Discos
 sudo pacman -S ntfs-3g exfat-utils nfs-utils cifs-utils
-
-
