@@ -1,0 +1,39 @@
+# Capturas de pantalla
+pacman -Sy scrot
+
+- En el fichero config.py añadimos:
+Key([mod], "p", lazy.spawn("scrot -s ~/Imagenes/Screenshots/captura_%Y-%m-%d_%H:%M:%S.png")),
+
+# Menu rofi
+Key([mod], "m", lazy.spawn("rofi -modi drun -show drun")),
+
+# Instalar y configurar el sonido
+sudo pacman -S pulseaudio pulseaudio-alsa
+
+# Instalar controlador de sonido
+sudo pacman -S alsa-utils
+
+# Instalar firmware
+sudo pacman -Sy alsa-firmware
+
+# Si es el PC pequeño de lenovo
+sudo pacman -S sof-firmware
+
+# Configurar la salida de audio
+sudo pacman -S pavucontrol
+
+- IMPORTANTE POR SI EL SONIDO QUIERE SALIR SI O SI POR EL PUERTO HDMI PODER CAMBIAR A AURICULARES!!!!
+
+# Iniciar sonido manualmente
+pulseaudio --start
+
+# Verificar el estado de PulseAudio
+pactl info
+
+# Podemos ajustar el sonido con 
+alsamixer
+
+# Para probar si el sonido está funcionando, puedes usar el siguiente comando para reproducir un sonido de prueba
+speaker-test -c 2
+
+
