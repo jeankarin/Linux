@@ -5,3 +5,8 @@ windows --> escoger aplicaciones ya abiertas
 drun --> menú de aplicaciones instaladas
 run --> ejecutar comandos del sistema
 ssh --> te conectas por ssh, te carga el fichero config de la carpeta .ssh
+
+# Paquetes a instalar
+libxcb-ewmh2 rofi suckless-tools
+
+# En ubuntu 24.04, suckless-tools, sustituye a dmenu.
